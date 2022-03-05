@@ -38,10 +38,7 @@ namespace JPO_2022
             commandes.Enqueue(() => { this.Y -= this.HAUTEUR; });
         }
 
-        public void DeplacementBas()
-        {
-            commandes.Enqueue(() => { this.Y += this.HAUTEUR; });
-        }
+
 
         public void TimerEvent(object source, ElapsedEventArgs e)
         {

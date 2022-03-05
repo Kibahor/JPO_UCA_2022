@@ -27,6 +27,9 @@ namespace JPO_2022
         public MainWindow()
         {
             InitializeComponent();
+            Random r = new Random();
+            int x = r.Next(750);
+            int y = r.Next(400);
             player = new Player(Player1.Width, Player1.Height);
             key = new Key(150,300,Key.Width,Key.Height);
             Player1.DataContext = player;
@@ -37,13 +40,9 @@ namespace JPO_2022
         {
             if (e.Key.Equals(System.Windows.Input.Key.Space))
             {
-                player.DeplacementBas();
-                player.DeplacementBas();
-                player.DeplacementBas();
-                player.DeplacementBas();
-                player.DeplacementDroite();
-                player.DeplacementDroite();
-                player.PickKey(key);
+
+
+
             }
         }
        
