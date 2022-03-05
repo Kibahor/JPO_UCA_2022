@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
@@ -36,6 +36,11 @@ namespace JPO_2022
         public void DeplacementHaut()
         {
             commandes.Enqueue(() => { this.Y -= this.HAUTEUR; });
+        }
+
+        public void DeplacementBas()
+        {
+            commandes.Enqueue(() => { this.Y += this.HAUTEUR; });
         }
 
 
